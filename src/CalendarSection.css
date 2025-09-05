@@ -1,0 +1,70 @@
+/* src/components/CalendarSection.css */
+.calendar-section {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+}
+
+#calendar {
+  margin-bottom: 20px;
+}
+
+.upcoming-events {
+  margin-top: 20px;
+}
+
+.event-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-date {
+  width: 50px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.event-day {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.event-month {
+  font-size: 12px;
+  color: #777;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-title {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.event-course {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.event-time {
+  font-size: 14px;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+}
+
+.event-time i {
+  margin-right: 5px;
+}

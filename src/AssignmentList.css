@@ -1,0 +1,74 @@
+/* src/components/AssignmentList.css */
+.assignments-section {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+  margin-top: 30px;
+}
+
+.assignment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.assignment-card {
+  border: 1px solid #eee;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.assignment-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+}
+
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.assignment-type {
+  background-color: var(--light-bg);
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.assignment-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.assignment-course {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.assignment-due {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.assignment-due i {
+  margin-right: 5px;
+}
+
+.assignment-progress {
+  margin-bottom: 15px;
+}
+
+.assignment-actions {
+  display: flex;
+  gap: 10px;
+}
