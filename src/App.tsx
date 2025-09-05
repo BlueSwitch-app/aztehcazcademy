@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 import DashboardStats from './components/DashboardStats';
 import VideoList from './components/VideoList';
 import CalendarSection from './components/CalendarSection';
-import AssignmentList from './components/AssignmentList';
+import AssignmentList from './components/AssigmentList';
 import './App.css';
 
 function App() {

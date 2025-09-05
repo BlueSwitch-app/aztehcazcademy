@@ -2,10 +2,14 @@
 import React from 'react';
 import './DashboardStats.css';
 
-const DashboardStats = ({ stats }) => {
+interface das{
+   stats: any
+}
+
+const DashboardStats: React.FC<das> = ({ stats }) => {
   return (
     <div className="dashboard-stats">
-      {stats.map(stat => (
+      {stats.map((stat: any) => (
         <div key={stat.id} className="stat-card">
           <div className={`stat-icon ${stat.color}`}>
             <i className={`fas fa-${stat.icon}`}></i>

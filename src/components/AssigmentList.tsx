@@ -2,7 +2,11 @@
 import React from 'react';
 import './AssignmentList.css';
 
-const AssignmentList = ({ assignments }) => {
+interface Props{
+    assignments: any
+}
+
+const AssignmentList: React.FC<Props> = ({ assignments }) => {
   return (
     <div className="assignments-section">
       <div className="section-title">
@@ -11,7 +15,7 @@ const AssignmentList = ({ assignments }) => {
       </div>
       
       <div className="assignment-list">
-        {assignments.map(assignment => (
+       {assignments.map((assignment: any) => (
           <div key={assignment.id} className="assignment-card">
             <div className="assignment-header">
               <div className="assignment-type">{assignment.type}</div>

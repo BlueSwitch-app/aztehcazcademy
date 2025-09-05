@@ -2,7 +2,11 @@
 import React from 'react';
 import './VideoList.css';
 
-const VideoList = ({ videos }) => {
+interface VI{
+    videos: any
+}
+
+const VideoList: React.FC<VI> = ({ videos }) => {
   return (
     <div className="videos-section">
       <div className="section-title">
@@ -11,7 +15,7 @@ const VideoList = ({ videos }) => {
       </div>
       
       <div className="video-list">
-        {videos.map(video => (
+        {videos.map((video: any) => (
           <div key={video.id} className="video-item">
             <div className="video-thumbnail">
               <img src={video.thumbnail} alt={video.title} />

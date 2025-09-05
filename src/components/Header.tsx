@@ -2,7 +2,11 @@
 import React from 'react';
 import './Header.css';
 
-const Header = ({ userData }) => {
+interface her{
+     userData: any
+}
+
+const Header: React.FC<her> = ({ userData }) => {
   return (
     <header className="header">
       <div className="container header-container">
